@@ -570,7 +570,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+.card-main {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 
+.card-main:hover {
+  transform: scale(1.03);
+  background: #ededed;
+}
 /********************** Projects Css End *******************/
 
 /************ Contact Css ************/

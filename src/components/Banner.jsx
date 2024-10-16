@@ -51,7 +51,8 @@ const Banner = () => {
                     >
                       {`Hi! I'm Tarique Ansari`}{" "}
                       <span>
-                        <Typewriter
+                        Full Stack Developer
+                        {/* <Typewriter
                           words={[
                             "Full Stack Developer",
                             "Mobile App Developer",
@@ -63,7 +64,7 @@ const Banner = () => {
                           typeSpeed={170}
                           deleteSpeed={150}
                           delaySpeed={10}
-                        />
+                        /> */}
                         <span className="wrap">{text}</span>
                       </span>
                     </h1>

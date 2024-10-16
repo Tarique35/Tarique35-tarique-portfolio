@@ -13,8 +13,12 @@ const ProjectCard = ({ title, description, imgUrl }) => {
           </div>
         </div>
       </Col> */}
-      <Card style={{ padding:"0" }}>
-        <Card.Img variant="top" src={imgUrl} style={{width:"100%",height:"240px"}}/>
+      <Card style={{ padding: "0" }} className="card-main">
+        <Card.Img
+          variant="top"
+          src={imgUrl}
+          style={{ width: "100%", height: "240px" }}
+        />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>

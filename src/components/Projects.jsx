@@ -7,6 +7,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
 import mufamaLogo from "../assets/img/mufama-logo.jpg";
+import portfolioPage from "../assets/img/portfolio-page.png";
 
 const Projects = () => {
   const projects = [
@@ -16,30 +17,30 @@ const Projects = () => {
       imgUrl: mufamaLogo,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Portfolio",
+      description: "Portfolio Website",
+      imgUrl: portfolioPage,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg1,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
   ];
 
   return (
@@ -89,14 +90,7 @@ const Projects = () => {
                       >
                         <Tab.Pane eventKey="first">
                           <Row>
-                            <div
-                              style={{
-                                display: "grid",
-                                gridTemplateColumns:
-                                  "repeat(auto-fill,minmax(400px,1fr))",
-                                gap: "20px",
-                              }}
-                            >
+                            <div className="project-grid">
                               {projects.map((project, index) => {
                                 return <ProjectCard key={index} {...project} />;
                               })}
