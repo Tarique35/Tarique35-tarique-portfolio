@@ -1,0 +1,7 @@
+npm install react-router-dom
+npm i react-bootstrap
+npm i typewriter-effect
+npm i express cors nodemailer
+npm install dotenv --save
+npm i react-mailchimp-subscribe
+after above sign up to mailchimp
