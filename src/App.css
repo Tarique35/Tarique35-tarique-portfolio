@@ -299,6 +299,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /********************** navabar css  end*********************/
 
 /********************** Banner Start  *********************/
+.typewriter-wrapper {
+  /* display: inline-block; */
+  height: 50px; /* Fixed height to prevent layout shifts */
+}
+@media (max-width: 1100px) {
+  .typewriter-wrapper {
+    height: 100%; /* Further adjust height for very small screens */
+  }
+}
+/* Adjust for smaller screens */
+@media (max-width: 767px) {
+  .typewriter-wrapper {
+    height: 65px !important; /* Adjust height for smaller screens */
+  }
+}
+
 .banner {
   margin-top: 0;
   padding: 160px 0 100px 0;

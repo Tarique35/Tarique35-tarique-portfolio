@@ -6,7 +6,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
-import mufamaLogo from "../assets/img/mufama-logo.jpg";
+import mufamaPage from "../assets/img/mufama-page.png";
 import portfolioPage from "../assets/img/portfolio-page.png";
 
 const Projects = () => {
@@ -14,12 +14,14 @@ const Projects = () => {
     {
       title: "Mufama",
       description: "An Ecommerce Website",
-      imgUrl: mufamaLogo,
+      imgUrl: mufamaPage,
+      link: "https://mufama.com/",
     },
     {
       title: "Portfolio",
       description: "Portfolio Website",
       imgUrl: portfolioPage,
+      link: "https://tarique35.github.io/Tarique35-tarique-portfolio/",
     },
     // {
     //   title: "Business Startup",
@@ -58,12 +60,11 @@ const Projects = () => {
                   >
                     <h2>Projects</h2>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
+                      Explore my projects that highlight my creativity and
+                      problem-solving. Each piece reflects my dedication to
+                      delivering engaging and impactful experiences.
                     </p>
+
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                       {/* <Nav
                         variant="pills"

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
 
-const ProjectCard = ({ title, description, imgUrl }) => {
+const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
     <>
       {/* <Col size={12} sm={6} md={4}>
@@ -13,17 +13,19 @@ const ProjectCard = ({ title, description, imgUrl }) => {
           </div>
         </div>
       </Col> */}
-      <Card style={{ padding: "0" }} className="card-main">
-        <Card.Img
-          variant="top"
-          src={imgUrl}
-          style={{ width: "100%", height: "240px" }}
-        />
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>{description}</Card.Text>
-        </Card.Body>
-      </Card>
+      <a href={link} target="_blank" style={{ textDecoration: "none" }}>
+        <Card style={{ padding: "0" }} className="card-main">
+          <Card.Img
+            variant="top"
+            src={imgUrl}
+            style={{ width: "100%", height: "240px" }}
+          />
+          <Card.Body>
+            <Card.Title>{title}</Card.Title>
+            <Card.Text>{description}</Card.Text>
+          </Card.Body>
+        </Card>
+      </a>
     </>
   );
 };

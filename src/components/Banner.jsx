@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
 import { Typewriter } from "react-simple-typewriter";
 import TrackVisibility from "react-on-screen";
 import portfolio from "../assets/img/portfolio2.jpg";
 
 const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 300);
-  const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
-  const period = 2000;
   const screenSize = window.innerWidth;
+
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/TariqueAnsariResume.pdf";
+    link.download = "Tarique_Ansari_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <section className="banner" id="home">
@@ -32,16 +35,6 @@ const Banner = () => {
                     } // these classnames are belongs to animate.css which is installed using npm install animate.css
                   >
                     <span className="tagline">Welcome to my Portfolio</span>
-                    {/* <h1>
-                      {`Hi! I'm Judy`}{" "}
-                      <span
-                        className="txt-rotate"
-                        dataPeriod="1000"
-                        data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-                      >
-                        <span className="wrap">{text}</span>
-                      </span>
-                    </h1> */}
                     <h1
                       style={
                         screenSize < 574
@@ -50,9 +43,8 @@ const Banner = () => {
                       }
                     >
                       {`Hi! I'm Tarique Ansari`}{" "}
-                      <span>
-                        Full Stack Developer
-                        {/* <Typewriter
+                      <div className="typewriter-wrapper">
+                        <Typewriter
                           words={[
                             "Full Stack Developer",
                             "Mobile App Developer",
@@ -64,9 +56,9 @@ const Banner = () => {
                           typeSpeed={170}
                           deleteSpeed={150}
                           delaySpeed={10}
-                        /> */}
+                        />
                         <span className="wrap">{text}</span>
-                      </span>
+                      </div>
                     </h1>
                     <p>
                       Junior Developer with over 10 months of experience in full
@@ -79,11 +71,8 @@ const Banner = () => {
                       skills and a track record of delivering high-quality
                       software solutions.
                     </p>
-                    <button
-                      onClick={() => console.log("connect")}
-                      className="mb-2"
-                    >
-                      Let’s Connect <ArrowRightCircle size={25} />
+                    <button onClick={handleDownloadResume} className="mb-2">
+                      Download Resume <ArrowRightCircle size={25} />
                     </button>
                   </div>
                 )}
