@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tarique35-tarique-portfolio/static/css/main.227ea49f.css",
-    "main.js": "/Tarique35-tarique-portfolio/static/js/main.44c8a5ba.js",
+    "main.js": "/Tarique35-tarique-portfolio/static/js/main.2a062eb9.js",
     "static/media/mufama-page.png": "/Tarique35-tarique-portfolio/static/media/mufama-page.b09b14b1d14e23cf544b.png",
     "static/media/portfolio-page.png": "/Tarique35-tarique-portfolio/static/media/portfolio-page.396f47e2237a0a4102ae.png",
     "static/media/portfolio2.jpg": "/Tarique35-tarique-portfolio/static/media/portfolio2.f5498a1db9bb03eea43e.jpg",
@@ -31,10 +31,10 @@
     "static/media/gmail.svg": "/Tarique35-tarique-portfolio/static/media/gmail.e6beefe916407eb6ed04294b5740ae4d.svg",
     "static/media/nav-icon2.svg": "/Tarique35-tarique-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.227ea49f.css.map": "/Tarique35-tarique-portfolio/static/css/main.227ea49f.css.map",
-    "main.44c8a5ba.js.map": "/Tarique35-tarique-portfolio/static/js/main.44c8a5ba.js.map"
+    "main.2a062eb9.js.map": "/Tarique35-tarique-portfolio/static/js/main.2a062eb9.js.map"
   },
   "entrypoints": [
     "static/css/main.227ea49f.css",
-    "static/js/main.44c8a5ba.js"
+    "static/js/main.2a062eb9.js"
   ]
 }
