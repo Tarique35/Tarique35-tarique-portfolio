@@ -22,7 +22,8 @@ const ProjectCard = ({ title, description, imgUrl, link }) => {
           />
           <Card.Body>
             <Card.Title>{title}</Card.Title>
-            <Card.Text>{description}</Card.Text>
+            {/* <Card.Text>{description}</Card.Text> */}
+            <h6>{description}</h6>
           </Card.Body>
         </Card>
       </a>
